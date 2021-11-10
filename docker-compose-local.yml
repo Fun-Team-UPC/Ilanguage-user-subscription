@@ -1,0 +1,8 @@
+services:
+  banking:
+    image: ilanguage-user-subscription-fas
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
