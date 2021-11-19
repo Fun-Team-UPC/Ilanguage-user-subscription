@@ -1,5 +1,5 @@
 services:
-  banking:
+  usersubscription:
     image: ilanguage-user-subscription-fas
     build:
       context: .

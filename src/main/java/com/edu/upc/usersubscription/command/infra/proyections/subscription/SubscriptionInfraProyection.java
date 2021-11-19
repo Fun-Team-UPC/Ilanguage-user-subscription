@@ -1,4 +1,4 @@
-package com.edu.upc.usersubscription.command.infra.proyections;
+package com.edu.upc.usersubscription.command.infra.proyections.subscription;
 
 import contracts.events.SubscriptionRegistered;
 import org.axonframework.eventhandling.EventHandler;

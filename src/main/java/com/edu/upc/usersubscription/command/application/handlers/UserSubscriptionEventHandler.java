@@ -18,6 +18,6 @@ public class UserSubscriptionEventHandler {
 
     @EventHandler
     public void on (UserSubscriptionAssigned event){
-        _repository.save(new UserSubscriptionInfra(event.getUserSubscriptionId(), event.getSubscriptionId(), event.getUserId()));
+        _repository.save(new UserSubscriptionInfra(event.getUserSubscriptionId(), event.getSubscriptionId(), event.getUserId(), event.getInitialDate(), event.getFinalDate()));
     }
 }

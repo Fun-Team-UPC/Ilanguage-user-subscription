@@ -1,4 +1,4 @@
-package com.edu.upc.usersubscription.command.infra.proyections;
+package com.edu.upc.usersubscription.command.infra.proyections.subscription;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

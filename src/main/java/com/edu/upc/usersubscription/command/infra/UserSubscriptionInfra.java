@@ -7,6 +7,7 @@ import lombok.Setter;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -18,6 +19,8 @@ public class UserSubscriptionInfra {
     public String userSubscriptionId;
     public String SubscriptionId;
     public String USerId;
+    private LocalDateTime initialDate;
+    private LocalDateTime finalDate;
 
 
 }
