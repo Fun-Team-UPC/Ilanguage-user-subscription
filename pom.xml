@@ -14,8 +14,10 @@
     <name>UserSubscription</name>
     <description>UserSubscription</description>
     <properties>
+        <java.version>8</java.version>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.release>8</maven.compiler.release>
     </properties>
     <dependencies>
         <dependency>
@@ -130,11 +132,11 @@
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
+
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <release>8</release>
                 </configuration>
             </plugin>
         </plugins>

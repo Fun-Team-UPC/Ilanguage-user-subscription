@@ -17,7 +17,7 @@ public class SwaggerConfig {
                 .components(new Components())
                 .info(new Info()
                         .title("Subscription Aplication A P I")
-                        .description("Subscription microservice for Ilanguage Application implemmented with Spring Boot RESTful service and docummented using springdoc-openapi-ui 3.0"));
+                        .description("User subscription microservice for Ilanguage Application implemmented with Spring Boot RESTful service and docummented using springdoc-openapi-ui 3.0"));
 
     }
 }
