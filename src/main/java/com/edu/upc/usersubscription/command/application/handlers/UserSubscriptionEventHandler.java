@@ -1,7 +1,10 @@
 package com.edu.upc.usersubscription.command.application.handlers;
 
+import ILenguage.user.contracts.events.UserRegistered;
 import com.edu.upc.usersubscription.command.infra.UserSubscriptionInfra;
 import com.edu.upc.usersubscription.command.infra.UserSubscriptionInfraRepository;
+import com.edu.upc.usersubscription.command.infra.user.UserInfra;
+import com.edu.upc.usersubscription.command.infra.user.UserInfraRepository;
 import events.UserSubscriptionAssigned;
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
@@ -20,4 +23,6 @@ public class UserSubscriptionEventHandler {
     public void on (UserSubscriptionAssigned event){
         _repository.save(new UserSubscriptionInfra(event.getUserSubscriptionId(), event.getSubscriptionId(), event.getUserId(), event.getInitialDate(), event.getFinalDate()));
     }
+
+
 }

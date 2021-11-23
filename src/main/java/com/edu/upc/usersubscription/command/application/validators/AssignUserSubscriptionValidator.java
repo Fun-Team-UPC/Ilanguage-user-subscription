@@ -3,13 +3,12 @@ package com.edu.upc.usersubscription.command.application.validators;
 import com.edu.upc.usersubscription.command.application.dtos.request.UserSubscriptionRequest;
 import com.edu.upc.usersubscription.command.infra.UserSubscriptionInfra;
 import com.edu.upc.usersubscription.command.infra.UserSubscriptionInfraRepository;
-import com.edu.upc.usersubscription.command.infra.proyections.subscription.SubscriptionInfra;
-import com.edu.upc.usersubscription.command.infra.proyections.subscription.SubscriptionInfraRepository;
-import com.edu.upc.usersubscription.command.infra.proyections.user.UserInfra;
-import com.edu.upc.usersubscription.command.infra.proyections.user.UserInfraRepository;
+import com.edu.upc.usersubscription.command.infra.subscription.SubscriptionInfra;
+import com.edu.upc.usersubscription.command.infra.subscription.SubscriptionInfraRepository;
+import com.edu.upc.usersubscription.command.infra.user.UserInfra;
+import com.edu.upc.usersubscription.command.infra.user.UserInfraRepository;
 import org.springframework.stereotype.Component;
 import pe.edu.upc.banking.common.application.Notification;
-
 
 import java.time.LocalDateTime;
 import java.util.Optional;
@@ -50,7 +49,7 @@ public class AssignUserSubscriptionValidator {
             notification.addError("User does not exists");
         }
 
-        /*Optional<UserSubscriptionInfra> existingUserWithSubscriptionActive= _repository.findLastUSerSubscriptionByUserId(userId);
+       /* Optional<UserSubscriptionInfra> existingUserWithSubscriptionActive= _repository.findLastUSerSubscriptionByUserId(userId);
         if (existingUserWithSubscriptionActive.isPresent()){
             LocalDateTime foundDateTime = existingUserWithSubscriptionActive.get().getFinalDate();
             int compareValue = foundDateTime.compareTo(LocalDateTime.now());

@@ -1,23 +1,20 @@
-package com.edu.upc.usersubscription.command.infra.proyections.user;
+package com.edu.upc.usersubscription.command.infra.user;
+
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
+@Entity
 public class UserInfra {
 
     @Id
-    @Column(length = 8)
     public String dni;
     public String userId;
 }

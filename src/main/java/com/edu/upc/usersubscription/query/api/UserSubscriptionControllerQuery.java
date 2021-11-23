@@ -1,6 +1,5 @@
 package com.edu.upc.usersubscription.query.api;
 
-import com.edu.upc.usersubscription.command.infra.proyections.subscription.SubscriptionInfraRepository;
 import com.edu.upc.usersubscription.query.projections.UserSubscriptionView;
 import com.edu.upc.usersubscription.query.projections.UserSubscriptionViewRepository;
 import io.swagger.v3.oas.annotations.Operation;

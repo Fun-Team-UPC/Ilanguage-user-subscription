@@ -4,12 +4,11 @@ import com.edu.upc.usersubscription.command.application.dtos.request.UserSubscri
 import com.edu.upc.usersubscription.command.application.dtos.response.UserSubscriptionResponse;
 import com.edu.upc.usersubscription.command.application.validators.AssignUserSubscriptionValidator;
 import com.edu.upc.usersubscription.command.infra.UserSubscriptionInfraRepository;
-import com.edu.upc.usersubscription.command.infra.proyections.subscription.SubscriptionInfra;
-import com.edu.upc.usersubscription.command.infra.proyections.subscription.SubscriptionInfraRepository;
+import com.edu.upc.usersubscription.command.infra.subscription.SubscriptionInfra;
+import com.edu.upc.usersubscription.command.infra.subscription.SubscriptionInfraRepository;
 import commands.AssingSubscriptionToUser;
 
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.stereotype.Component;
 import pe.edu.upc.banking.common.application.Notification;
@@ -18,7 +17,6 @@ import pe.edu.upc.banking.common.application.ResultType;
 
 
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 

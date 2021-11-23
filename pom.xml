@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.edu.upc</groupId>
     <artifactId>UserSubscription</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>UserSubscription</name>
     <description>UserSubscription</description>
     <properties>
@@ -103,6 +103,7 @@
             <artifactId>ILenguage-user-contracts</artifactId>
             <version>1.4</version>
         </dependency>
+
         <dependency>
             <groupId>pe.edu.upc</groupId>
             <artifactId>banking-common</artifactId>

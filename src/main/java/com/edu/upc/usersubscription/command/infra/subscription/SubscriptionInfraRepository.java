@@ -1,4 +1,4 @@
-package com.edu.upc.usersubscription.command.infra.proyections.subscription;
+package com.edu.upc.usersubscription.command.infra.subscription;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
